@@ -31,20 +31,3 @@ input::placeholder {
     width: 1280px;
   }
 }
-
-.hidden {
-  display: none;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.book {
-  background-image: url(../src/images/background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  height: 700px;
-}
