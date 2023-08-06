@@ -1,7 +1,7 @@
 /* ☎️ Mobile First ...START */
 .nav {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   position: absolute;
 }
 .nav__icon {
