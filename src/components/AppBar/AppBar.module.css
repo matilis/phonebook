@@ -1,0 +1,9 @@
+/* ☎️ Mobile First ...START */
+.appbar__wrapper {
+  display: flex;
+}
+.appbar__item {
+  margin: 15px 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgb(206, 205, 205);
+}

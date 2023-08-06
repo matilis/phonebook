@@ -1,0 +1,64 @@
+.wrapper {
+  height: 50px;
+  margin: 30px 0 0 40px;
+}
+
+.form {
+  position: relative;
+}
+.form__name {
+  position: absolute;
+  top: 5px;
+}
+.form__number {
+  position: absolute;
+  top: 5px;
+  left: 265px;
+}
+.form__input {
+  min-width: 200px;
+  font-size: 25px;
+  font-weight: 200;
+  border: 1px solid rgb(206, 205, 205);
+  border-radius: 3px;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  color: rgb(136, 129, 129);
+  transition: all 100ms ease;
+  padding: 5px 14px;
+}
+.form__input:hover {
+  outline: none;
+  color: black;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
+    rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
+  transform: scale(1.1);
+}
+
+.form__button {
+  position: absolute;
+  top: 2px;
+  left: 530px;
+  width: 230px;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  border: 1px solid rgb(206, 205, 205);
+  border-radius: 3px;
+  padding: 5px 0;
+  color: rgb(136, 129, 129);
+  background-color: white;
+  transition: all 100ms ease;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  color: black;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
+    rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
+  transform: scale(1.1);
+}

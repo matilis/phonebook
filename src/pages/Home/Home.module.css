@@ -1,0 +1,107 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePageLogIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage__logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.homePage__titleLogIn {
+  font-size: 110px;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  font-weight: 200;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: pulse 20s infinite;
+}
+.homePage__title {
+  font-size: 110px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  padding-top: 20px;
+  margin: 30px 0 0 0;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: pulse 20s infinite;
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  }
+  10% {
+    text-shadow: 3px 2px 3px rgba(66, 68, 90, 1);
+  }
+  20% {
+    text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
+  }
+  30% {
+    text-shadow: 5px 2px 4px rgba(66, 68, 90, 1);
+  }
+  40% {
+    text-shadow: 6px 2px 5px rgba(66, 68, 90, 1);
+  }
+  50% {
+    text-shadow: 7px 2px 5px rgba(66, 68, 90, 1);
+  }
+  60% {
+    text-shadow: 8px 2px 6px rgba(66, 68, 90, 1);
+  }
+  70% {
+    text-shadow: 9px 2px 6px rgba(66, 68, 90, 1);
+  }
+  80% {
+    text-shadow: 10px 2px 7px rgba(66, 68, 90, 1);
+  }
+  90% {
+    text-shadow: 10px 2px 7px rgba(66, 68, 90, 1);
+  }
+}
+.homePage__beforeTitle {
+  font-size: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 100;
+  padding-top: 20px;
+  margin: 30px 0 0 0;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: fade-in 1s ease-in;
+}
+.homePage__subtitle {
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(66, 68, 90, 1);
+  animation: pulse 12s infinite;
+}
+.homePage__online {
+  font-size: 65px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 100;
+  margin: 30px 0 0 0;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: fade-in 2s ease-in;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.homePage__name {
+  padding-left: 3px;
+  font-size: 26px;
+}

@@ -1,0 +1,33 @@
+/* ☎️ Mobile First ...START */
+.nav {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+}
+.nav__icon {
+  position: relative;
+  width: 20px;
+  bottom: 2px;
+  padding-right: 5px;
+}
+.nav__filter {
+  text-decoration: none;
+}
+.nav__link {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  color: rgb(136, 129, 129);
+  transition: all 100ms ease;
+  padding: 5px 10px 5px 8px;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: black;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
+    rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
+  transform: scale(1.1);
+}

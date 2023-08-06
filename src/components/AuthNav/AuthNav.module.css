@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-left: 30px;
+}
+.nav__link {
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+  color: rgb(136, 129, 129);
+  transition: all 100ms ease;
+  padding: 5px 14px;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: black;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
+    rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
+  transform: scale(1.1);
+}

@@ -1,5 +1,5 @@
 @import-normalize; /* bring in normalize.css styles */
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@200;300;400&family=Roboto:wght@400;500&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +7,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input::placeholder {
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(136, 129, 129);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 code {

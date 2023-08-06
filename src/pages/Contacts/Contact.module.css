@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
+.list__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.list__item {
+  width: 71.5%;
+  padding: 20px;
+}
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(206, 205, 205);
+}
+.homePage__title {
+  font-size: 110px;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  font-weight: 200;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  animation: pulse 20s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
+  }
+  10% {
+    text-shadow: 3px 2px 3px rgba(66, 68, 90, 1);
+  }
+  20% {
+    text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
+  }
+  30% {
+    text-shadow: 5px 2px 4px rgba(66, 68, 90, 1);
+  }
+  40% {
+    text-shadow: 6px 2px 5px rgba(66, 68, 90, 1);
+  }
+  50% {
+    text-shadow: 7px 2px 5px rgba(66, 68, 90, 1);
+  }
+  60% {
+    text-shadow: 8px 2px 6px rgba(66, 68, 90, 1);
+  }
+  70% {
+    text-shadow: 9px 2px 6px rgba(66, 68, 90, 1);
+  }
+  80% {
+    text-shadow: 10px 2px 7px rgba(66, 68, 90, 1);
+  }
+  90% {
+    text-shadow: 10px 2px 7px rgba(66, 68, 90, 1);
+  }
+}
