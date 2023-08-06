@@ -35,6 +35,13 @@ export const Modal = ({ isOpen, onClose }) => {
 
   return (
     <div className={css.modal__overlay} onClick={onClose}>
+      <button onClick={onClose} className={css.modal__close}>
+        <img
+          className={css.modal__iconClosed}
+          src={closedSvg}
+          alt="closed icon"
+        />
+      </button>
       <div
         className={css.modal__content}
         onClick={event => event.stopPropagation()}
@@ -48,13 +55,6 @@ export const Modal = ({ isOpen, onClose }) => {
           onClick={handleLogout}
         >
           Logout
-        </button>
-        <button onClick={onClose} className={css.modal__close}>
-          <img
-            className={css.modal__iconClosed}
-            src={closedSvg}
-            alt="closed icon"
-          />
         </button>
       </div>
     </div>
