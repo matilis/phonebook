@@ -12,7 +12,7 @@ const Contacts = () => {
   const error = useSelector(selectError);
 
   return (
-    <div className={css.list__wrapper}>
+    <div className={css.wrapper}>
       <Helmet>
         <title>Contacts</title>
       </Helmet>
@@ -21,14 +21,14 @@ const Contacts = () => {
         <div className={css.homePage}>
           <h1 className={css.homePage__title}>Phonebook</h1>
         </div>
-        <div className={css.wrapper}>
-          <ContactForm />
-          <Filter />
+        <div className={css.list__wrapper}>
+          {/* <ContactForm />
+          <Filter /> */}
         </div>
-        <div>
+        {/* <div>
           {isLoading ? <Loader /> : <ContactList />}
           {error && <Error />}
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,21 +1,19 @@
 .book {
+  height: 800px;
   background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  height: 650px;
-  max-width: 400px;
+  background-size: contain;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .book {
-    max-width: 400px;
+    height: 500px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  /* .book {
-    max-width: 400px;
-  } */
-}
+  .book {
+    height: 800px;
+  }
+} */

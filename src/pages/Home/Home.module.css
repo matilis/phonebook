@@ -15,16 +15,16 @@
   padding-top: 0px;
 }
 .homePage__titleLogIn {
-  font-size: 65px;
+  font-size: 70px;
   font-family: 'Dosis', sans-serif;
   margin: 0;
-  padding-top: 20px;
+
   font-weight: 200;
   text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   animation: pulse 20s infinite;
 }
 .homePage__title {
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
   padding-top: 0px;
