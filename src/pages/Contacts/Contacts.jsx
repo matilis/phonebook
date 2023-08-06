@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 // import { useSelector } from 'react-redux';
-// import { ContactForm } from 'components';
+import { ContactForm } from 'components';
 // import { ContactList } from 'components';
 import { Filter } from 'components';
 // import { Loader, Error } from 'components';
@@ -22,7 +22,7 @@ const Contacts = () => {
           <h1 className={css.homePage__title}>Phonebook</h1>
         </div>
         <div className={css.list__wrapper}>
-          {/* <ContactForm /> */}
+          <ContactForm />
           <Filter />
         </div>
         {/* <div>

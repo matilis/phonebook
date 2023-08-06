@@ -48,30 +48,25 @@ export const ContactForm = () => {
   return (
     <div className={css.wrapper}>
       <form onSubmit={handleSubmit} className={css.form}>
-        <label className={css.form__name}>
-          <input
-            type="text"
-            name="name"
-            pattern="^[A-Za-z.'\- ]+$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-            required
-            className={css.form__input}
-            placeholder="Contact name"
-          />
-        </label>
+        <input
+          type="text"
+          name="name"
+          pattern="^[A-Za-z.'\- ]+$"
+          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+          required
+          className={css.form__input}
+          placeholder="Contact name"
+        />
 
-        <label className={css.form__number}>
-          <input
-            type="tel"
-            name="number"
-            pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
-            title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
-            required
-            placeholder="Contact number"
-            className={css.form__input}
-          />
-        </label>
-
+        <input
+          type="tel"
+          name="number"
+          pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
+          title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
+          required
+          placeholder="Contact number"
+          className={css.form__input}
+        />
         <button type="submit" className={css.form__button}>
           Add contact
         </button>
