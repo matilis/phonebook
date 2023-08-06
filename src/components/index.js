@@ -5,6 +5,7 @@ export * from './ContactList';
 export * from './Filter';
 export * from './Layout';
 export * from './LoginForm';
+export * from './Modal';
 export * from './Navigation';
 export * from './PrivateRoute';
 export * from './RegisterForm';
