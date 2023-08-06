@@ -1,6 +1,7 @@
 .usermenu__wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-right: 15px;
 }
 .usermenu__text {
   display: none;
