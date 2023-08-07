@@ -32,7 +32,7 @@ export const ContactList = () => {
     dispatch(editContact(editedContact));
 
     Notiflix.Notify.info(`${editedName} edited`, {
-      width: '500px',
+      width: '300px',
       position: 'center-top',
       distance: '18px',
       svgSize: '120px',
@@ -50,7 +50,7 @@ export const ContactList = () => {
   const handleDelete = id => {
     dispatch(deleteContact(id));
     Notiflix.Notify.failure(`Contact DELETED`, {
-      width: '500px',
+      width: '300px',
       position: 'center-top',
       distance: '18px',
       svgSize: '120px',

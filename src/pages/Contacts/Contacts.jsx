@@ -1,15 +1,15 @@
 import { Helmet } from 'react-helmet';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { ContactForm } from 'components';
-// import { ContactList } from 'components';
+import { ContactList } from 'components';
 import { Filter } from 'components';
-// import { Loader, Error } from 'components';
-// import { selectError, selectIsLoading } from 'redux/contacts/selectors';
+import { Loader, Error } from 'components';
+import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 import css from './Contact.module.css';
 
 const Contacts = () => {
-  // const isLoading = useSelector(selectIsLoading);
-  // const error = useSelector(selectError);
+  const isLoading = useSelector(selectIsLoading);
+  const error = useSelector(selectError);
 
   return (
     <div className={css.wrapper}>
@@ -25,10 +25,10 @@ const Contacts = () => {
           <ContactForm />
           <Filter />
         </div>
-        {/* <div>
+        <div>
           {isLoading ? <Loader /> : <ContactList />}
           {error && <Error />}
-        </div> */}
+        </div>
       </div>
     </div>
   );

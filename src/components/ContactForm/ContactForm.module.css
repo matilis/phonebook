@@ -1,26 +1,42 @@
-.wrapper {
+.containerBox {
+  display: flex;
   border-bottom: 1px solid rgb(206, 205, 205);
+}
+.wrapper {
+  width: 100%;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin: 20px;
+  padding: 20px 25px 15px 20px;
 }
 
 .form__input {
+  margin-bottom: 5px;
+  width: 100%;
   font-size: 25px;
   font-weight: 200;
   border: 1px solid rgb(206, 205, 205);
   border-radius: 3px;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
+  background-color: rgb(247, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 4px,
+    rgba(0, 0, 0, 0.3) 4px 2px 4px -10px, rgba(0, 0, 0, 0.2) -3px -2px 0px inset;
   color: rgb(136, 129, 129);
-  transition: all 100ms ease;
+  /* transition: all 100ms ease; */
   padding: 5px 14px;
+  z-index: 1;
+  animation: fade-in 600ms linear;
 }
-.form__input:hover {
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* .form__input:hover {
   outline: none;
   color: black;
   font-weight: 400;
@@ -29,13 +45,10 @@
   box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
     rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
   transform: scale(1.02);
-}
+} */
 
 .form__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  margin: 20px;
   font-size: 25px;
   font-family: 'Dosis', sans-serif;
   border: 1px solid rgb(206, 205, 205);
@@ -44,13 +57,19 @@
   background-color: white;
   transition: all 100ms ease;
   cursor: pointer;
+  z-index: 1;
+  animation: fade-in 600ms linear;
 }
 
 .form__button:hover {
   color: black;
   font-weight: 600;
   border-radius: 3px;
+
   box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
     rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
   transform: scale(1.1);
+}
+.form__buttonHide {
+  display: none;
 }

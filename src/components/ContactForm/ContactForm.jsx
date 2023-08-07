@@ -1,4 +1,5 @@
 import Notiflix from 'notiflix';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
@@ -20,7 +21,7 @@ export const ContactForm = () => {
     if (stateContactsNames.includes(contact.name)) {
       event.target.reset();
       return Notiflix.Notify.warning(`${contact.name} is alredy in contacts`, {
-        width: '500px',
+        width: '300px',
         position: 'center-top',
         distance: '18px',
         svgSize: '120px',
@@ -33,7 +34,7 @@ export const ContactForm = () => {
 
     dispatch(addContact(contact));
     Notiflix.Notify.success(`${contact.name} added`, {
-      width: '500px',
+      width: '300px',
       position: 'center-top',
       distance: '18px',
       svgSize: '120px',
@@ -45,32 +46,64 @@ export const ContactForm = () => {
     event.target.reset();
   };
 
-  return (
-    <div className={css.wrapper}>
-      <form onSubmit={handleSubmit} className={css.form}>
-        <input
-          type="text"
-          name="name"
-          pattern="^[A-Za-z.'\- ]+$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-          required
-          className={css.form__input}
-          placeholder="Contact name"
-        />
+  useEffect(() => {
+    const btnForm1 = document.getElementById('btnForm1');
+    const btnForm2 = document.getElementById('btnForm2');
 
-        <input
-          type="tel"
-          name="number"
-          pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
-          title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
-          required
-          placeholder="Contact number"
-          className={css.form__input}
-        />
-        <button type="submit" className={css.form__button}>
-          Add contact
-        </button>
-      </form>
+    function handlebtnForm2Click(e) {
+      e.preventDefault();
+      btnForm1.click();
+    }
+
+    btnForm2.addEventListener('click', handlebtnForm2Click, false);
+
+    return () => {
+      btnForm2.removeEventListener('click', handlebtnForm2Click, false);
+    };
+  }, []);
+
+  // const button1 = document.getElementById('button1');
+  // const button2 = document.getElementById('button2');
+
+  // function handleButton2Click(e) {
+  //   e.preventDefault();
+  //   button1.click();
+  // }
+
+  // button2.addEventListener('click', handleButton2Click, false);
+
+  return (
+    <div className={css.containerBox}>
+      <div className={css.wrapper}>
+        <form onSubmit={handleSubmit} className={css.form}>
+          <input
+            type="text"
+            name="name"
+            pattern="^[A-Za-z.'\- ]+$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            required
+            className={css.form__input}
+            placeholder="Contact name"
+          />
+
+          <input
+            type="tel"
+            name="number"
+            pattern="^\+?\d{1,4}?\s?\(?\d{1,4}?\)?\s?\d{1,4}\s?\d{1,4}\s?\d{1,9}$"
+            title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            required
+            placeholder="Contact number"
+            className={css.form__input}
+          />
+
+          <button id="btnForm1" type="submit" className={css.form__buttonHide}>
+            Add contact
+          </button>
+        </form>
+      </div>
+      <button id="btnForm2" className={css.form__button}>
+        Add contact
+      </button>
     </div>
   );
 };
