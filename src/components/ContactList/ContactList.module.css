@@ -31,7 +31,7 @@
 
 .contacts__name {
   font-family: 'Dosis', sans-serif;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 400;
   padding: 15px 10px 0;
   margin: 0;
@@ -39,14 +39,14 @@
 
 .contacts__number {
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 200;
   padding: 0px 10px;
   margin: 15px 0;
 }
 
 .contact__icon {
-  width: 20px;
+  width: 16px;
 }
 .contacts__btn {
   display: flex;

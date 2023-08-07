@@ -18,7 +18,6 @@
   font-size: 70px;
   font-family: 'Dosis', sans-serif;
   margin: 0;
-
   font-weight: 200;
   text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   animation: pulse 20s infinite;
@@ -76,13 +75,6 @@
   text-shadow: 2px 2px 3px rgba(66, 68, 90, 1);
   animation: fade-in 1s ease-in;
 }
-.homePage__subtitle {
-  font-size: 20px;
-  font-family: 'Dosis', sans-serif;
-  font-style: italic;
-  text-shadow: 1px 1px 2px rgba(66, 68, 90, 1);
-  animation: pulse 12s infinite;
-}
 .homePage__online {
   font-size: 40px;
   font-family: 'Dosis', sans-serif;
@@ -105,4 +97,39 @@
 .homePage__name {
   padding-left: 3px;
   font-size: 26px;
+}
+@media screen and (min-width: 768px) {
+  .homePage__titleLogIn {
+    font-size: 90px;
+  }
+  .homePage__title {
+    font-size: 90px;
+    padding-top: 20px;
+  }
+
+  .homePage__beforeTitle {
+    padding-top: 20px;
+  }
+  .homePage__online {
+    font-size: 55px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .homePage__logout {
+    padding-top: 20px;
+  }
+  .homePage__titleLogIn {
+    font-size: 110px;
+  }
+  .homePage__title {
+    font-size: 110px;
+    padding-top: 20px;
+  }
+
+  .homePage__beforeTitle {
+    padding-top: 20px;
+  }
+  .homePage__online {
+    font-size: 65px;
+  }
 }
