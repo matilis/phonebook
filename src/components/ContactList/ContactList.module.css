@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   margin: 20px;
   padding: 0;
 }
@@ -47,7 +47,7 @@
 }
 
 .contact__icon {
-  width: 16px;
+  width: 15px;
 }
 .contacts__btn {
   display: flex;
