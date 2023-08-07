@@ -62,16 +62,14 @@
 }
 @media screen and (min-width: 1280px) {
   .wrapper {
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgb(206, 205, 205);
   }
   .list__wrapper {
     display: flex;
     justify-content: center;
   }
   .list__item {
-    width: 71.5%;
     padding: 20px;
   }
   .homePage__title {
