@@ -1,7 +1,6 @@
 .nav {
   display: flex;
   gap: 8px;
-  position: absolute;
   margin-left: 20px;
 }
 .nav__icon {
