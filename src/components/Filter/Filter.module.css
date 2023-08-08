@@ -37,7 +37,7 @@
   }
 
   .filter__input {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 200;
     border: none;
     border-radius: 3px;
@@ -47,8 +47,7 @@
     transition: all 100ms ease;
     padding: 5px 14px;
   }
-  .filter__input:hover,
-  .filter__input:focus {
+  .filter__input:hover {
     outline: none;
     color: black;
     font-weight: 400;
