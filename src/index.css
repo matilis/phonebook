@@ -10,7 +10,6 @@ body {
 }
 
 input::placeholder {
-  font-size: 20px;
   font-family: 'Dosis', sans-serif;
   color: rgb(136, 129, 129);
 }
