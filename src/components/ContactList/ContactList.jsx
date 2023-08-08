@@ -16,7 +16,7 @@ export const ContactList = () => {
 
   const dispatch = useDispatch();
 
-  const sortedContacts = contacts.sort((a, b) => b.name.localeCompare(a.name));
+  const sortedContacts = contacts.sort((a, b) => a.name.localeCompare(b.name));
 
   const handleEdit = (id, name, number) => {
     setEditingContactId(id);
