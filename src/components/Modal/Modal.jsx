@@ -46,9 +46,9 @@ export const Modal = ({ isOpen, onClose }) => {
         className={css.modal__content}
         onClick={event => event.stopPropagation()}
       >
-        <p className={css.usermenu__text}>
+        <div className={css.usermenu__text}>
           Welcome <p className={css.usermenu__name}>{user.name}</p>
-        </p>
+        </div>
         <button
           className={css.usermenu__btn}
           type="button"
