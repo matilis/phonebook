@@ -21,8 +21,7 @@
   transition: all 100ms ease;
   padding: 5px 10px 5px 8px;
 }
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover {
   color: black;
   font-weight: 600;
   border-radius: 3px;
