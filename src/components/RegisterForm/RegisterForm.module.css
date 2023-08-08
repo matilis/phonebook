@@ -53,8 +53,7 @@
   transition: all 100ms ease;
   cursor: pointer;
 }
-.form__btn:hover,
-.form__btn:focus {
+.form__btn:hover {
   color: black;
   font-weight: 600;
   border-radius: 3px;

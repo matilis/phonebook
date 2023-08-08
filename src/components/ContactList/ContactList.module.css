@@ -105,8 +105,7 @@
   transition: all 100ms linear;
   margin: 20px;
 }
-.contacts__wrapperBtn:hover,
-.contacts__wrapperBtn:focus {
+.contacts__wrapperBtn:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px, rgba(0, 0, 0, 0.3) 3px 3px 4px,
     rgba(0, 0, 0, 0.2) -5px -4px 0px inset;
   transform: scale(1.1);
