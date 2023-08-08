@@ -16,6 +16,8 @@ export const ContactList = () => {
 
   const dispatch = useDispatch();
 
+  const sortedContacts = contacts.sort((a, b) => b.name.localeCompare(a.name));
+
   const handleEdit = (id, name, number) => {
     setEditingContactId(id);
     setEditedName(name);
@@ -63,7 +65,7 @@ export const ContactList = () => {
 
   return (
     <ul className={css.contacts}>
-      {contacts.map(contact => (
+      {sortedContacts.map(contact => (
         <li key={contact.id} className={css.contacts__item}>
           {editingContactId === contact.id ? (
             <>
