@@ -69,10 +69,9 @@
     display: flex;
     justify-content: center;
   }
-  .list__item {
-    padding: 20px;
-  }
+
   .homePage__title {
     font-size: 110px;
+    padding: 20px 0 50px;
   }
 }
