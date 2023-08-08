@@ -25,7 +25,7 @@ const Contacts = () => {
           <ContactForm />
           <Filter />
         </div>
-        <div>
+        <div className={css.list__box}>
           {isLoading ? <Loader /> : <ContactList />}
           {error && <Error />}
         </div>
