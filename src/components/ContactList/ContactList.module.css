@@ -131,7 +131,7 @@
 @media screen and (min-width: 1280px) {
   .contacts {
     gap: 20px;
-    margin: 30px 310px 0 300px;
+    margin: 30px 310px 30px 300px;
   }
   .contacts__item {
     min-width: 150px;
