@@ -16,6 +16,7 @@ export const selectVisibleContacts = createSelector(
     } else {
       return contacts.filter(
         contact =>
+          contact.name.includes(statusFilter.filter) ||
           contact.name.toLowerCase().includes(statusFilter.filter) ||
           contact.name.toLocaleUpperCase().includes(statusFilter.filter)
       );
