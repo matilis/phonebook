@@ -53,10 +53,6 @@ export const ContactForm = () => {
     function handlebtnForm2Click(e) {
       e.preventDefault();
       btnForm1.click();
-
-      if ('vibrate' in navigator) {
-        navigator.vibrate(200);
-      }
     }
 
     btnForm2.addEventListener('click', handlebtnForm2Click, false);

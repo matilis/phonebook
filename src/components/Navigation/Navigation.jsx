@@ -7,16 +7,9 @@ import { activeStyle } from 'styles';
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
-  const handleNavLinkClick = () => {
-    if ('vibrate' in navigator) {
-      navigator.vibrate(200);
-    }
-  };
-
   return (
     <nav className={css.nav}>
       <NavLink
-        onClick={handleNavLinkClick}
         style={({ isActive }) => activeStyle(isActive)}
         className={css.nav__link}
         to="/"
@@ -26,7 +19,6 @@ export const Navigation = () => {
       </NavLink>
       {isLoggedIn && (
         <NavLink
-          onClick={handleNavLinkClick}
           style={({ isActive }) => activeStyle(isActive)}
           className={css.nav__link}
           to="/contacts"
