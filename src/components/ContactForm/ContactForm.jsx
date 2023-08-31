@@ -53,6 +53,10 @@ export const ContactForm = () => {
     function handlebtnForm2Click(e) {
       e.preventDefault();
       btnForm1.click();
+
+      if ('vibrate' in navigator) {
+        navigator.vibrate(200);
+      }
     }
 
     btnForm2.addEventListener('click', handlebtnForm2Click, false);
@@ -61,16 +65,6 @@ export const ContactForm = () => {
       btnForm2.removeEventListener('click', handlebtnForm2Click, false);
     };
   }, []);
-
-  // const button1 = document.getElementById('button1');
-  // const button2 = document.getElementById('button2');
-
-  // function handleButton2Click(e) {
-  //   e.preventDefault();
-  //   button1.click();
-  // }
-
-  // button2.addEventListener('click', handleButton2Click, false);
 
   return (
     <div className={css.containerBox}>
